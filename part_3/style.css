@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header {
+    height: 120px;
+    border-bottom: 2px solid grey;
+}
+.logo {
+    padding: 35px;
+    float: left;
+}
+.nav ul li {
+    display: inline-block;
+    font-size: 32px;
+    margin: 40px 25px;
+    padding: 5px 10px;
+}
+.nav ul li:hover {
+    background: #3A3A3A;
+    color: aliceblue;
+}
+.nav {
+    float: right;
+}
+.f-block {
+    height: 540px;
+    background: url(ipad.png) no-repeat;
+    background-position: 80% 90%;
+}
+.video {
+    background-color: #333333;
+    color: aliceblue;
+    border: 1px solid #333333;
+}
+.video img {
+    margin: 10px 10px;
+    height: 25px;
+    display: inline-block;
+}
+.video span {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 25px;
+}
+h2 {
+    font-size: 62px;
+    padding: 25px 0;
+}
+h4 {
+    padding-bottom: 18px;
+    font-size: 48px;
+}
+.text-block {
+    padding: 10%;
+    width: 50%;
+    text-align: left;
+}
+.clearfix {
+    clear: both;
+}
+button {
+    width: 200px;
+    padding: 5px 10px;
+    background-color: #333333;
+    color: white;
+    border: none;
+}
+button span {
+    padding: 0 10px;
+    font-size: 30px;
+}
+button img {
+    padding-top: 5px;
+    float: left
+    
+}
+.right-text-block {
+    float: left;
+    width: 70%;
+}
+.img-text {
+    width: 100%;
+}
+.img-text img {
+    display: block;
+    float: left;
+    padding-right: 20px;
+}
+.text-layer {
+    margin: 0 7px;
+}
+.text-layer h3 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.text-layer p {
+    font-size: 20px;
+}
+.col3 {
+    margin: 15px 0 30px 0;
+    width: 33.33%;
+    float: left;
+    padding: 0 8px;
+}
+.col3 h4 {
+    font-size: 20px;
+}
+.col3 p {
+    line-height: 22px;
+    padding: 8px 0;
+}
+.clearfix {
+    clear: both;
+}
+.left-promo-block {
+    float: right;
+    width: 30%;
+}
+.join {
+    width: 100%;
+    background-color: #333333;
+    color: white;
+}
+.baner img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.join input {
+    width: 100%;
+    margin: 5px auto;
+}
+.join h5 {
+    padding: 10px 0;
+    font-size: 120%;
+    text-align: center;
+}
+.join {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 120%;
+    padding: 25px;
+    text-align: center;
+}
+.join button {
+    margin: 0 auto;
+    background-color: #cc3366;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.join p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #333333;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+}
+.footer p {
+    padding: 25px 0;
+}
+.menu-small {
+    height: 80px;
+    width: 80px;
+   position: absolute;
+    right: 0;
+    margin: 20px;
+    display: none;
+    
+}
+.menu-small .row {
+    height: 6px;
+    width: 90%;
+    background-color: grey;
+    margin: 15px 0;
+}
+@media screen and (max-width: 960px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .left-promo-block {
+        display: none;
+    }
+    .header {
+        text-align: center;
+    }
+    .logo img {
+        display: none;
+    }
+    .right-text-block {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li {
+        margin: -41px 8px;;
+    }
+}
+@media screen and (max-width: 640px) {
+    .col3 {
+        width: 100%;
+    }
+    .menu-small {
+        display: block;
+    }
+    .nav ul li {
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+        top: 30px;
+    }
+    .nav {
+        display: none;
+    }
+    .logo img{
+        margin-top: 10px;
+        height: 30px;
+        display: block;
+    }
+    .img-text {
+        width: 100%;
+        text-align: center;
+    }
+    .img-text img {
+        width: 100%;
+        padding-right: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .f-block {
+        background-size: contain;
+        background-position: bottom;
+    }
+}
